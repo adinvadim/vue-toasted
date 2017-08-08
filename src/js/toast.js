@@ -15,7 +15,7 @@ let globalOptions = {};
 export const initPlugin = function (Vue, options) {
     Toast.setGlobalOptions(options);
     Toast.init();
-    Vue.component('toasted', ToastComponent);
+    Vue.component('vue-toasted', ToastComponent);
     Vue.toasted = Vue.prototype.$toasted = Toast;
 };
 
